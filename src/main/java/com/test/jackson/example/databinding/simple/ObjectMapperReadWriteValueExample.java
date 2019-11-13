@@ -11,7 +11,7 @@ import java.util.Map;
 
 import static java.lang.System.out;
 
-public class ObjectMapperReadValueExample {
+public class ObjectMapperReadWriteValueExample {
 
     public static void main(String[] args) throws IOException {
 
