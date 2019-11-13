@@ -23,14 +23,19 @@ NOTE: A getter method makes a non-public field serializable and deserializable
     However, commenting out getAge() only prevents age from being serialized
      (e.g., via one of ObjectMapper’s writeValue() methods).
 */
-public class ObjectMapperReadValueExample {
+public class ObjectMapperReadWriteValueExample {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
 
         Path path = Paths.get(ObjectMapperReadTree.class.getResource("/person.json").toURI());
 
         ObjectMapper mapper = new ObjectMapper();
+
+        //deserialization
         Person person = mapper.readValue(path.toFile(), Person.class);
         out.println(person);
+
+        //serialization
+        mapper.writeValue(out, person);
     }
 }
