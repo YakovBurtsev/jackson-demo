@@ -1,4 +1,4 @@
-package com.test.jackson.example.databinding.full;
+package com.yaburtsev.jackson.demo.databinding.full;
 
 public class Person {
     private String firstName;

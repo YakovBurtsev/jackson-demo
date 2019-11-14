@@ -1,10 +1,9 @@
-package com.test.jackson.example.databinding.full;
+package com.yaburtsev.jackson.demo.databinding.full;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.test.jackson.example.ObjectMapperReadTree;
+import com.yaburtsev.jackson.demo.ObjectMapperReadTree;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;

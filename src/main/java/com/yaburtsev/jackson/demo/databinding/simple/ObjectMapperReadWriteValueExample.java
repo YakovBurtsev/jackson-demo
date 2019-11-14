@@ -1,4 +1,4 @@
-package com.test.jackson.example.databinding.simple;
+package com.yaburtsev.jackson.demo.databinding.simple;
 
 
 import com.fasterxml.jackson.core.type.TypeReference;

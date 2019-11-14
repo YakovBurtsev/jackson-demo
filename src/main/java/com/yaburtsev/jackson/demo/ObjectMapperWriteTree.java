@@ -1,4 +1,4 @@
-package com.test.jackson.example;
+package com.yaburtsev.jackson.demo;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;

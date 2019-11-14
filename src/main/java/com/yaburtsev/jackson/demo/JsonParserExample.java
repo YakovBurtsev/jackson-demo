@@ -1,4 +1,4 @@
-package com.test.jackson.example;
+package com.yaburtsev.jackson.demo;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
@@ -20,9 +20,10 @@ public class JsonParserExample {
             if (jsonToken == null)
                 break;
             System.out.printf("jsonToken = %s [%s] [%b] [%s]%n",
-                    jsonToken, jsonToken.asString(),
-                    jsonToken.isNumeric(),
-                    parser.getValueAsString());
+                jsonToken,
+                jsonToken.asString(),
+                jsonToken.isNumeric(),
+                parser.getValueAsString());
         }
     }
 }
