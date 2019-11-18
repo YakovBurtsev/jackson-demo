@@ -1,4 +1,4 @@
-package com.yaburtsev.jackson.demo.annotations;
+package com.yaburtsev.jackson.demo.annotations.readwrite;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
