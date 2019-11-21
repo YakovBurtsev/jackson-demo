@@ -1,11 +1,9 @@
-package com.yaburtsev.jackson.demo;
+package com.yaburtsev.jackson.demo.core;
 
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.PrettyPrinter;
-import com.fasterxml.jackson.core.util.MinimalPrettyPrinter;
 
 import java.io.File;
 

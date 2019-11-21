@@ -2,7 +2,7 @@ package com.yaburtsev.jackson.demo.databinding.full;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yaburtsev.jackson.demo.ObjectMapperReadTree;
+import com.yaburtsev.jackson.demo.core.ObjectMapperReadTree;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

@@ -1,4 +1,4 @@
-package com.yaburtsev.jackson.demo;
+package com.yaburtsev.jackson.demo.core;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

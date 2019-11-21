@@ -1,4 +1,4 @@
-package com.yaburtsev.jackson.demo;
+package com.yaburtsev.jackson.demo.core;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
