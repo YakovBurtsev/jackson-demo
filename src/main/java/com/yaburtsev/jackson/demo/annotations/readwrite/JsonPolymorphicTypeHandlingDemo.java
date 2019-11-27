@@ -2,7 +2,6 @@ package com.yaburtsev.jackson.demo.annotations.readwrite;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -10,14 +9,14 @@ import java.io.IOException;
 public class JsonPolymorphicTypeHandlingDemo {
 
     public static void main(String[] args) throws IOException {
+        final var mapper = new ObjectMapper();
+
         Dog dog = new Dog("lacy");
         Zoo zoo1 = new Zoo(dog);
-
-        String result = new ObjectMapper().writeValueAsString(zoo1);
-        System.out.println(result);
+        System.out.println(mapper.writeValueAsString(zoo1));
 
         String json = "{\"animal\":{\"name\":\"lacy\",\"type\":\"cat\"}}";
-        Zoo zoo2 = new ObjectMapper().readerFor(Zoo.class).readValue(json);
+        Zoo zoo2 = mapper.readerFor(Zoo.class).readValue(json);
         System.out.println(zoo2);
     }
 
@@ -54,7 +53,6 @@ public class JsonPolymorphicTypeHandlingDemo {
 
     }
 
-    @JsonTypeName("dog")
     private static class Dog extends Animal {
 
         public Dog(String name) {
@@ -72,7 +70,6 @@ public class JsonPolymorphicTypeHandlingDemo {
         }
     }
 
-    @JsonTypeName("cat")
     private static class Cat extends Animal {
 
         boolean likesCream;
